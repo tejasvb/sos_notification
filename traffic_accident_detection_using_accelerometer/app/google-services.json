@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1083733277568",
+    "project_id": "traffic-accident-detecti-76d72",
+    "storage_bucket": "traffic-accident-detecti-76d72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083733277568:android:e96f74f41fed710433df65",
+        "android_client_info": {
+          "package_name": "com.example.traffic_accident_detection_using_accelerometer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1083733277568-jokg8sk90ib8rj7rji9kpblk3v5ev9e6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACRFljBuEIyG6hiGxWUGwIy2ZAbKncf5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1083733277568-jokg8sk90ib8rj7rji9kpblk3v5ev9e6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

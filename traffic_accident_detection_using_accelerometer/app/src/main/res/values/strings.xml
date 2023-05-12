@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ImpactAlert</string>
+    <string name="help_me">HELP ME!!</string>
+    <string name="email">Email</string>
+    <string name="crash_image">crash Image</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="register">register</string>
+    <string name="already_have_an_account_sign_in">Already Have an Account? Sign In</string>
+    <string name="login">LOGIN</string>
+    <string name="new_user_register_now">New user? Register Now</string>
+    <string name="city">City</string>
+    <string name="department">Department</string>
+    <string name="helper">Helper</string>
+    <string name="client">Client</string>
+</resources>
