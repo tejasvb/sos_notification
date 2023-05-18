@@ -1,4 +1,4 @@
-package com.example.traffic_accident_detection_using_accelerometer
+package com.example.traffic_accident_detection_using_accelerometer.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.traffic_accident_detection_using_accelerometer.R
 
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.example.traffic_accident_detection_using_accelerometer
+package com.example.traffic_accident_detection_using_accelerometer.activity
 
 import android.app.Activity
 import android.content.Intent
@@ -7,40 +7,22 @@ import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
+import com.example.traffic_accident_detection_using_accelerometer.R
 import com.example.traffic_accident_detection_using_accelerometer.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityLoginBinding
     private val emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-
-        binding.login.setOnClickListener {
-            binding.progressBar.visibility = View.VISIBLE
-            closeKeyboard()
-            logIn(binding.email.text.toString(), binding.password.text.toString())
-        }
-        binding.doNotHaveAccount.setOnClickListener {
-            val intent = Intent(this, RegistrationActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+        binding.login.setOnClickListener(this)
+        binding.doNotHaveAccount.setOnClickListener(this)
         val view = binding.root
         setContentView(view)
     }
-
-    private fun closeKeyboard() {
-        val view = this.currentFocus
-        if (view != null) {
-            val inputMethodManager =
-                getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
-            inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
-        }
-    }
-
     private fun logIn(email: String, password: String) {
         when {
             email.isEmpty() -> {
@@ -72,5 +54,27 @@ class LoginActivity : AppCompatActivity() {
                 binding.progressBar.visibility = View.GONE
             }
 
+    }
+    private fun closeKeyboard() {
+        val view = this.currentFocus
+        if (view != null) {
+            val inputMethodManager =
+                getSystemService(Activity.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+        }
+    }
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.login -> {
+                binding.progressBar.visibility = View.VISIBLE
+                closeKeyboard()
+                logIn(binding.email.text.toString(), binding.password.text.toString())
+            }
+            R.id.already_have_account -> {
+                val intent = Intent(this, RegistrationActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }
     }
 }

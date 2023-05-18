@@ -6,7 +6,7 @@
     android:background="#FFF"
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
-    tools:context=".RegisterHelperActivity">
+    tools:context=".activity.RegisterHelperActivity">
     <ScrollView android:layout_marginTop="30dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -14,7 +14,7 @@
         android:id="@+id/scrollView">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -24,7 +24,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="monospace"
             android:text="@string/help_me"
-            android:textColor="#651FFF"
+            android:textColor="#01ADC0"
             android:textSize="35sp" />
 
         <ImageView
@@ -40,13 +40,13 @@
             android:layout_height="50dp"
             android:layout_marginBottom="15dp"
             android:autofillHints="email"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_helper"
             android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:paddingStart="10dp"
             android:textColor="#000"
-            android:textColorHint="#651FFF"
+            android:textColorHint="#01ADC0"
             />
 
         <EditText
@@ -55,36 +55,35 @@
             android:layout_height="50dp"
             android:layout_marginBottom="15dp"
             android:autofillHints="username"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_helper"
             android:ems="10"
             android:hint="@string/name"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:textColor="#000"
-            android:textColorHint="#651FFF" />
+            android:textColorHint="#01ADC0" />
         <EditText
             android:id="@+id/city"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="15dp"
             android:autofillHints="username"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_helper"
             android:ems="10"
             android:hint="@string/city"
             android:inputType="textPersonName"
             android:paddingStart="10dp"
             android:textColor="#000"
-            android:textColorHint="#651FFF" />
+            android:textColorHint="#01ADC0" />
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="fill_parent"
             android:layout_marginBottom="15dp"
             android:layout_height="50dp"
             android:ems="10"
-
-            android:textColorHint="#651FFF"
-            android:textColor="#000"
-            android:background="@drawable/edit_text"
+            android:textColorHint="#01ADC0"
+            android:textColor="#01ADC0"
+            android:background="@drawable/edit_text_helper"
             android:prompt="@string/department"
 
             />
@@ -94,13 +93,14 @@
             android:layout_height="50dp"
             android:layout_marginBottom="15dp"
             android:autofillHints="phone_number"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_helper"
             android:ems="10"
             android:hint="@string/phone_number"
-            android:inputType="number"
             android:paddingStart="10dp"
             android:textColor="#000"
-            android:textColorHint="#651FFF" />
+            android:textColorHint="#01ADC0"
+            android:inputType="phone"
+           />
 
         <EditText
             android:id="@+id/password"
@@ -108,13 +108,13 @@
             android:layout_height="50dp"
             android:layout_marginBottom="20dp"
             android:autofillHints="password"
-            android:background="@drawable/edit_text"
+            android:background="@drawable/edit_text_helper"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:paddingStart="10dp"
             android:textColor="#000"
-            android:textColorHint="#651FFF" />
+            android:textColorHint="#01ADC0" />
 
         <Button
             android:id="@+id/signup"
@@ -134,7 +134,7 @@
             android:layout_marginTop="30dp"
             android:padding="15dp"
             android:text="@string/already_have_an_account_sign_in"
-            android:textColor="#00F"
+            android:textColor="#01ADC0"
             android:textSize="7pt" />
 
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.traffic_accident_detection_using_accelerometer
+package com.example.traffic_accident_detection_using_accelerometer.activity
 
 import android.app.Activity
 import android.content.Intent
@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.traffic_accident_detection_using_accelerometer.databinding.ActivityRegistrationBinding
 import com.example.traffic_accident_detection_using_accelerometer.model.User
-import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 
@@ -94,7 +93,7 @@ class RegistrationActivity : AppCompatActivity() {
     private fun saveUserToFirebaseDatabase(email: String, name: String, phoneNumber: String) {
         if(FirebaseAuth.getInstance().uid==null){
             Toast.makeText(this, "Some error", Toast.LENGTH_SHORT).show()
-            return;
+            return
         }
         val uid = FirebaseAuth.getInstance().uid ?: ""
 

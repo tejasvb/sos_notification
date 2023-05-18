@@ -1,15 +1,15 @@
-package com.example.traffic_accident_detection_using_accelerometer
+package com.example.traffic_accident_detection_using_accelerometer.activity
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.traffic_accident_detection_using_accelerometer.R
 import com.example.traffic_accident_detection_using_accelerometer.databinding.ActivityRegisterHelperBinding
 import com.example.traffic_accident_detection_using_accelerometer.model.User
 import com.google.firebase.auth.FirebaseAuth

@@ -6,7 +6,7 @@
     android:background="#FFF"
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
-    tools:context=".RegistrationActivity">
+    tools:context=".activity.RegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:background="@drawable/edit_text"
             android:ems="10"
             android:hint="@string/phone_number"
-            android:inputType="number"
+            android:inputType="phone"
             android:paddingStart="10dp"
             android:textColor="#000"
             android:textColorHint="#651FFF" />
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/button"
+            android:background="@drawable/client_button"
             android:text="@string/register"
             android:textColor="#fff" />
 

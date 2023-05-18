@@ -1,71 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/LinearLayout1"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <LinearLayout
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".activity.UsersSelectionActivity"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/client"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_weight="1"
+        android:background="#4C16A2"
+        android:padding="20dp"
+        >
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#4C16A2"
-            android:layout_weight="1"
-            android:padding="20dp">
+        <ImageView
+            android:id="@+id/client_button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/man"
+            android:contentDescription="@string/client" />
 
-            <Button
-                android:id="@+id/client"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_centerVertical="true"
-                android:background="@drawable/man" />
-            <TextView
-                android:layout_below="@+id/client"
-                android:text="@string/client"
-                android:id="@+id/client_text"
-                android:layout_width="wrap_content"
-                android:textSize="40dp"
-                android:textColor="@color/white"
-                android:layout_centerHorizontal="true"
-                android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/client_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client_button"
+            android:layout_centerHorizontal="true"
+            android:text="@string/client"
+            android:textColor="@color/white"
+            android:textSize="40sp"
 
-                 />
+            />
 
-        </RelativeLayout>
+    </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#16909D"
-            android:layout_weight="1"
-            android:padding="20dp">
+    <RelativeLayout
+        android:id="@+id/helper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#16909D"
+        android:padding="20dp">
 
-            <Button
-                android:id="@+id/helper"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_centerVertical="true"
-                android:background="@drawable/men" />
-            <TextView
-                android:layout_below="@+id/helper"
-                android:text="@string/helper"
-                android:id="@+id/helper_text"
-                android:layout_width="wrap_content"
-                android:textSize="40dp"
-                android:textColor="@color/white"
-                android:layout_centerHorizontal="true"
-                android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/helper_helper"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/helper"
+            android:layout_centerInParent="true"
+            android:background="@drawable/men" />
 
-                />
+        <TextView
+            android:id="@+id/helper_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/helper_helper"
+            android:layout_centerHorizontal="true"
+            android:text="@string/helper"
+            android:textColor="@color/white"
+            android:textSize="40sp"
 
-        </RelativeLayout>
-    </LinearLayout>
+            />
 
-
-
-
-</RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

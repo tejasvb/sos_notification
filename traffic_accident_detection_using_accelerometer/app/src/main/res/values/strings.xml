@@ -14,4 +14,18 @@
     <string name="department">Department</string>
     <string name="helper">Helper</string>
     <string name="client">Client</string>
+    <string name="set_latitude">Latitude \n %s</string>
+    <string name="set_longitude">Longitude \n %s</string>
+    <string name="set_country_name">Country Name \n %s</string>
+    <string name="set_locality">Locality \n %s</string>
+    <string name="set_address">Address \n %s</string>
+    <string name="ask_for_help">--- Ask For help ---</string>
+    <string name="share_your_location">Share Your Location</string>
+    <string name="share_my_current_location">Share My Current Location</string>
+    <string name="send_sos_notification">Send SOS Notification</string>
+    <string name="locality">Locality</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="country_name">Country Name</string>
+    <string name="address">Address</string>
 </resources>
