@@ -3,8 +3,8 @@ The SOS notification app will send notifications to nearby helpers in the databa
 
 <h1>  Environment Variables:</h1> 
 To run this project, you will need to add the firebase google-service.json and add service key in APIService.kt
-<img width="570" alt="image" src="https://github.com/tejasvb/sos_notification/assets/63836638/aa1d3d57-9fd5-495c-b53a-32447de8f9f2">
-<img src="https://user-images.githubusercontent.com/63836638/122662730-e3226c80-d1b2-11eb-815e-f4ed09ad77ea.png" align = "center"  height="500" width="500" >
+
+<img src="https://github.com/tejasvb/sos_notification/assets/63836638/aa1d3d57-9fd5-495c-b53a-32447de8f9f2.png" >
 
 <h1> Screen Shots</h1>
 
